@@ -1,0 +1,38 @@
+[build]
+  publish = "build"
+  command = "yarn build"
+
+[build.environment]
+  NODE_VERSION = "22"
+  CI = "false"
+  DISABLE_ESLINT_PLUGIN = "true"
+  GENERATE_SOURCEMAP = "false"
+
+# Netlify Forms — formlar build sırasında public/index.html'deki gizli
+# <form name="contact" netlify> bloğundan otomatik tespit edilir.
+
+# SPA fallback — React Router için tüm route'lar index.html'e yönlenir.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Güvenlik header'ları
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# Statik varlıklar için uzun süreli önbellek (CRA hash'li dosyalar)
+[[headers]]
+  for = "/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
