@@ -200,6 +200,8 @@ export const products = [
     slug: "ayak-temizleme-kopugu",
     name: "PediZone Fresh-Guard Ayak Temizleme Köpüğü",
     volume: "200 ml",
+    price: 1799,
+    priceCurrency: "TRY",
     category: "Günlük Temizlik",
     shortDesc:
       "Her seans öncesi kliniğimizde de tercih ettiğimiz, cildi yormadan temizleyen yumuşak köpük.",
@@ -259,6 +261,8 @@ export const products = [
     slug: "uretli-onarici-krem",
     name: "PediZone %15 Üreli Çatlak Topuk ve Ayak Kremi",
     volume: "150 ml",
+    price: 1699,
+    priceCurrency: "TRY",
     category: "Çatlak & Kuruluk",
     shortDesc:
       "Topuk çatlakları ve sertleşmiş cilt için klinik bakımdan sonra eve gönderdiğimiz krem.",
@@ -318,6 +322,8 @@ export const products = [
     slug: "tirnak-ayak-serumu",
     name: "PediZone Foot and Nail Care Serum",
     volume: "50 ml",
+    price: 1449,
+    priceCurrency: "TRY",
     category: "Tırnak Bakımı",
     shortDesc:
       "Tırnak altına ve kenarlarına nüfuz edebilen ince yapılı, mantar eğilimli tırnaklar için günlük serum.",

@@ -10,6 +10,15 @@ const ProductDetail = () => {
   if (!product) return <Navigate to="/urunler" replace />;
 
   const productUrl = `https://podosis.com/urunler/${product.slug}`;
+  const priceText = new Intl.NumberFormat("tr-TR", {
+    style: "currency",
+    currency: product.priceCurrency || "TRY",
+    minimumFractionDigits: 2,
+  }).format(product.price);
+  const quoteMessage = encodeURIComponent(
+    `Merhaba Podosis, ${product.name} için merkezinizden daha uygun fiyat teklifi almak istiyorum.`
+  );
+  const quoteUrl = `${clinic.whatsappLink}&text=${quoteMessage}`;
 
   const productJsonLd = {
     "@context": "https://schema.org",
@@ -21,6 +30,15 @@ const ProductDetail = () => {
     url: productUrl,
     brand: { "@type": "Brand", name: "PediZone" },
     category: product.category,
+    offers: {
+      "@type": "Offer",
+      url: productUrl,
+      priceCurrency: product.priceCurrency || "TRY",
+      price: product.price,
+      availability: "https://schema.org/InStock",
+      itemCondition: "https://schema.org/NewCondition",
+      seller: { "@type": "Organization", name: "Podosis" },
+    },
   };
 
   const breadcrumbJsonLd = {
@@ -90,7 +108,13 @@ const ProductDetail = () => {
             <h1 className="font-heading text-3xl md:text-5xl font-light text-ink tracking-tight leading-[1.1] mb-3">
               {product.name}
             </h1>
-            <p className="text-sm text-ink-muted mb-6">{product.volume}</p>
+            <p className="text-sm text-ink-muted mb-2">{product.volume}</p>
+            <p className="text-2xl font-heading text-ink mb-4" data-testid="product-reference-price">
+              {priceText}
+              <span className="block text-xs font-sans font-normal text-ink-muted mt-1">
+                Pazaryeri referans fiyatı
+              </span>
+            </p>
             <p className="text-base md:text-lg text-ink-muted leading-relaxed mb-8">
               {product.shortDesc}
             </p>
@@ -107,20 +131,19 @@ const ProductDetail = () => {
             </ul>
             <div className="p-5 rounded-2xl bg-brand-light/40 border border-brand-light mb-6">
               <p className="text-sm text-ink-muted leading-relaxed">
-                Ürünlerimiz e-ticaret kapsamında satışa sunulmamaktadır;
-                <strong className="text-ink"> kliniğimizden temin</strong>{" "}
-                edebilirsiniz. Uygunluğunu ve kullanım sıklığını size özel
-                değerlendiriyoruz.
+                Bu sayfadaki tutar pazaryeri referans fiyatıdır. Ürünü
+                <strong className="text-ink"> merkezimizden daha uygun</strong>{" "}
+                almak için bize WhatsApp’tan fiyat teklifi isteyebilirsiniz.
               </p>
             </div>
             <a
-              href={clinic.whatsappLink}
+              href={quoteUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-brand text-white px-7 py-3.5 rounded-full font-medium hover:bg-brand-hover transition-colors shadow-pink-glow"
               data-testid="product-whatsapp-cta"
             >
-              WhatsApp'tan Bilgi Al
+              Merkezimizden Daha Uygun Fiyat Teklifi Alın
               <ArrowRight className="w-4 h-4" />
             </a>
           </div>
