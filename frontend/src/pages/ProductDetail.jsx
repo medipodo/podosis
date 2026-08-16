@@ -9,14 +9,43 @@ const ProductDetail = () => {
   const product = getProduct(slug);
   if (!product) return <Navigate to="/urunler" replace />;
 
+  const productUrl = `https://podosis.com/urunler/${product.slug}`;
+
   const productJsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
+    "@id": `${productUrl}#product`,
     name: product.name,
     description: product.shortDesc,
     image: product.image,
+    url: productUrl,
     brand: { "@type": "Brand", name: "PediZone" },
     category: product.category,
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Anasayfa",
+        item: "https://podosis.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Ürünler",
+        item: "https://podosis.com/urunler",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: product.name,
+        item: productUrl,
+      },
+    ],
   };
 
   const others = products.filter((p) => p.slug !== product.slug);
@@ -28,7 +57,7 @@ const ProductDetail = () => {
         description={product.shortDesc}
         path={`/urunler/${product.slug}`}
         image={product.image}
-        jsonLd={productJsonLd}
+        jsonLd={[productJsonLd, breadcrumbJsonLd]}
       />
 
       <div className="container-wide pt-8 pb-2">
