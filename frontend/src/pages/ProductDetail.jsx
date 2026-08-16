@@ -18,7 +18,7 @@ const ProductDetail = () => {
   const quoteMessage = encodeURIComponent(
     `Merhaba Podosis, ${product.name} için merkezinizden daha uygun fiyat teklifi almak istiyorum.`
   );
-  const quoteUrl = `${clinic.whatsappLink}&text=${quoteMessage}`;
+  const quoteUrl = `https://wa.me/${clinic.phone.replace("+", "")}?text=${quoteMessage}`;
 
   const productJsonLd = {
     "@context": "https://schema.org",
