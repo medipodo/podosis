@@ -430,6 +430,34 @@ export const gallery = [
     after:
       "https://customer-assets.emergentagent.com/job_healthy-steps-13/artifacts/yr2a4eth_batik-tirnak-sonrasi.webp",
   },
+  {
+    id: 4,
+    title: "Tırnak bakım süreci — klinik örnek 1",
+    image:
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663870773359/rbTNemGicBMDbnwB.webp",
+    imageAlt: "Tırnak bakım sürecinden önce ve sonra görünüm kolajı — klinik örnek 1",
+  },
+  {
+    id: 5,
+    title: "Tırnak bakım süreci — klinik örnek 2",
+    image:
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663870773359/CLWMnOiBtSalfEHW.webp",
+    imageAlt: "Tırnak bakım sürecinden önce ve sonra görünüm kolajı — klinik örnek 2",
+  },
+  {
+    id: 6,
+    title: "Tırnak bakım süreci — klinik örnek 3",
+    image:
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663870773359/HWpdEeVauWQldzsa.webp",
+    imageAlt: "Tırnak bakım sürecinden önce ve sonra görünüm kolajı — klinik örnek 3",
+  },
+  {
+    id: 7,
+    title: "Tırnak bakım süreci — klinik örnek 4",
+    image:
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663870773359/nXBHKoHBriGdAnSP.webp",
+    imageAlt: "Tırnak bakım sürecinden önce ve sonra görünüm kolajı — klinik örnek 4",
+  },
 ];
 
 export const reviews = [
@@ -681,8 +709,8 @@ export const blogPosts = [
     date: "2024-12-04",
     author: "Podosis Klinik",
     cover:
-      "https://images.pexels.com/photos/7108396/pexels-photo-7108396.jpeg?auto=compress&cs=tinysrgb&w=1400",
-    coverAlt: "Ayak bakımı sonrası doğru bakım rutini",
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663870773359/fZdlZOFUfPHaYRhN.webp",
+    coverAlt: "Podolojik ayak bakımı sırasında uzman uygulaması",
     readMinutes: 5,
     metaDescription:
       "Ayak bakımından sonra ilk 48 saatte ve sonraki haftalarda nelere dikkat etmelisiniz? Podosis'ten pratik bir bakım rehberi.",
