@@ -1,2 +1,5 @@
+# Permanent product URL migration
+/urunler/uretli-onarici-krem    /urunler/pedizone-intense-repair-ureli-krem    301
+
 # SPA fallback — React Router routing
 /*    /index.html   200
