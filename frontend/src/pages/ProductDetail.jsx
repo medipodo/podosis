@@ -236,6 +236,68 @@ const ProductDetail = () => {
         </section>
       )}
 
+      {/* Product Visual Story — Foot and Nail Care Serum only */}
+      {product.slug === "tirnak-ayak-serumu" && (
+        <section className="py-12 md:py-16" aria-label="Foot and Nail Care Serum görselleri">
+          <div className="container-wide max-w-5xl">
+            <figure className="max-w-5xl mx-auto rounded-3xl overflow-hidden bg-white border border-border shadow-sm">
+              <img
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663870773359/pFWLuvynEaEErOCH.webp"
+                alt="PediZone Foot and Nail Care Serum tanıtımı ve kullanım bilgileri"
+                loading="lazy"
+                width="1536"
+                height="944"
+                className="w-full h-auto"
+              />
+              <figcaption className="sr-only">
+                PediZone serumunun içerik, kullanım ve bakım özelliklerini anlatan tanıtım görseli
+              </figcaption>
+            </figure>
+
+            <div className="mt-10 md:mt-14">
+              <div className="max-w-3xl mb-8">
+                <p className="overline mb-3">Bakım sürecinden bir örnek</p>
+                <h2 className="font-heading text-3xl md:text-4xl text-ink tracking-tight leading-tight mb-4">
+                  Düzenli bakım, takip ve sabır
+                </h2>
+                <p className="text-base md:text-lg text-ink-muted leading-relaxed">
+                  Aşağıdaki görseller, podolojik bakım sürecinden önce ve sonraki görünümü örnek olarak gösterir. Bakım planı ve alınan sonuçlar kişinin durumuna, uygulama düzenine ve uzman değerlendirmesine göre değişebilir.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+                <figure className="rounded-3xl overflow-hidden bg-bone border border-border">
+                  <img
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663870773359/txjCbgkkgiGEPyeT.webp"
+                    alt="Podolojik bakım süreci öncesinde ayak tırnaklarının görünümü"
+                    loading="lazy"
+                    width="1200"
+                    height="1200"
+                    className="w-full aspect-square object-cover"
+                  />
+                  <figcaption className="p-4 text-sm text-ink-muted">
+                    Bakım süreci öncesi örnek görünüm
+                  </figcaption>
+                </figure>
+                <figure className="rounded-3xl overflow-hidden bg-bone border border-border">
+                  <img
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663870773359/HMJnlyMbbGAdiaMl.webp"
+                    alt="Podolojik bakım süreci sonrasında ayak tırnaklarının görünümü"
+                    loading="lazy"
+                    width="1024"
+                    height="1024"
+                    className="w-full aspect-square object-cover"
+                  />
+                  <figcaption className="p-4 text-sm text-ink-muted">
+                    Bakım süreci sonrası örnek görünüm
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Ingredients */}
       {product.ingredients?.length > 0 && (
         <section className="py-16 md:py-20 bg-bone/50">
