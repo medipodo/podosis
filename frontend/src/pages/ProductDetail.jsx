@@ -171,34 +171,67 @@ const ProductDetail = () => {
 
       {/* Product Visual Story — Fresh-Guard only */}
       {product.slug === "ayak-temizleme-kopugu" && (
-        <section className="py-8 md:py-12" aria-label="Fresh-Guard görselleri">
-          <div className="container-wide grid md:grid-cols-[5fr_7fr] gap-6 md:gap-8 items-stretch">
-            <figure className="rounded-3xl overflow-hidden bg-bone min-h-[420px] md:min-h-[560px]">
+        <section className="py-12 md:py-16" aria-label="Fresh-Guard görselleri">
+          <div className="container-wide max-w-5xl">
+            <figure className="max-w-3xl mx-auto rounded-3xl overflow-hidden bg-white border border-border shadow-sm">
               <img
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663870773359/cxieiwmvjCFDnhRF.webp"
-                alt="PediZone Fresh-Guard Ayak Temizleme Köpüğü ile gülümseyen çocuk"
-                loading="lazy"
-                width="1024"
-                height="1536"
-                className="w-full h-full object-cover object-center"
-              />
-              <figcaption className="sr-only">
-                PediZone Fresh-Guard Ayak Temizleme Köpüğü günlük bakım rutini için
-              </figcaption>
-            </figure>
-            <figure className="rounded-3xl overflow-hidden bg-bone min-h-[420px] md:min-h-[560px]">
-              <img
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663870773359/RmfEuOacbhWexyND.webp"
-                alt="Podoloji kliniğinde PediZone Fresh-Guard Ayak Temizleme Köpüğü ile ayak temizliği"
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663870773359/GoGwdXWRoYnjEaYF.webp"
+                alt="PediZone Fresh-Guard Ayak Temizleme Köpüğü içerikleri, kullanım alanları ve günlük bakım adımları"
                 loading="lazy"
                 width="1649"
                 height="2048"
-                className="w-full h-full object-cover object-center"
+                className="w-full h-auto"
               />
               <figcaption className="sr-only">
-                Fresh-Guard köpüğünün klinik ayak bakımındaki kullanımı
+                Fresh-Guard köpüğünün destekleyici içerikleri ve üç adımlı kullanım rutini
               </figcaption>
             </figure>
+
+            <div className="mt-10 md:mt-14 space-y-10 md:space-y-14">
+              <article className="grid md:grid-cols-[5fr_7fr] gap-8 md:gap-12 items-center">
+                <figure className="rounded-3xl overflow-hidden bg-bone aspect-[4/5]">
+                  <img
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663870773359/RmfEuOacbhWexyND.webp"
+                    alt="Podoloji kliniğinde PediZone Fresh-Guard Ayak Temizleme Köpüğü ile ayak temizliği"
+                    loading="lazy"
+                    width="1649"
+                    height="2048"
+                    className="w-full h-full object-cover object-center"
+                  />
+                </figure>
+                <div>
+                  <p className="overline mb-3">Klinik kullanım</p>
+                  <h2 className="font-heading text-3xl md:text-4xl text-ink tracking-tight leading-tight mb-4">
+                    Bakıma temiz bir başlangıç
+                  </h2>
+                  <p className="text-base md:text-lg text-ink-muted leading-relaxed">
+                    Podolojik bakımlarda hijyen, uygulamanın ayrılmaz bir parçası. Biz de danışanımızın ihtiyacına göre bakım öncesinde veya sonrasında PediZone Fresh-Guard Foot Foam ile ayakların nazikçe temizlenmesini destekliyoruz. Köpük formu cildi yormadan arındırırken, bakımın daha ferah ve temiz hissedilen bir rutinle tamamlanmasına yardımcı oluyor.
+                  </p>
+                </div>
+              </article>
+
+              <article className="grid md:grid-cols-[7fr_5fr] gap-8 md:gap-12 items-center">
+                <div className="md:order-1">
+                  <p className="overline mb-3">Günlük bakım</p>
+                  <h2 className="font-heading text-3xl md:text-4xl text-ink tracking-tight leading-tight mb-4">
+                    Ev rutinine kolayca eklenir
+                  </h2>
+                  <p className="text-base md:text-lg text-ink-muted leading-relaxed">
+                    Pompalı formu sayesinde günlük ayak temizliğini pratik hale getirir. Islak ayağa uygulayın, nazikçe masaj yapın ve durulayın; ardından bakım rutininize devam edin.
+                  </p>
+                </div>
+                <figure className="md:order-2 rounded-3xl overflow-hidden bg-bone aspect-[2/3]">
+                  <img
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663870773359/cxieiwmvjCFDnhRF.webp"
+                    alt="PediZone Fresh-Guard Ayak Temizleme Köpüğü ile günlük ayak bakımını anlatan ürün görseli"
+                    loading="lazy"
+                    width="1024"
+                    height="1536"
+                    className="w-full h-full object-cover object-center"
+                  />
+                </figure>
+              </article>
+            </div>
           </div>
         </section>
       )}
