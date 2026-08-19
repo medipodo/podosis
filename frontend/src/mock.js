@@ -762,60 +762,149 @@ export const blogPosts = [
   },
   {
     slug: "kadinlarda-topuk-catlagi",
-    title: "Kadınlarda Topuk Çatlağı: Nedenleri ve Çözümleri",
+    title: "Kadınlarda Topuk Çatlağı: Nedenleri, Evde Bakım ve Uzman Desteği",
     excerpt:
-      "Sadece kozmetik bir sorun değil; bazen derin bir bakım ihtiyacının işareti. Topuk çatlağının nedenlerine ve nasıl çözüldüğüne dair kısa bir rehber.",
+      "Topuk çatlağı neden olur, evde hangi bakım adımları güvenlidir ve ne zaman uzmana başvurmalısınız? Üreli krem, ayakkabı seçimi ve profesyonel bakım rehberi.",
     date: "2024-12-12",
     author: "Podosis Klinik",
     cover:
       "https://customer-assets.emergentagent.com/job_healthy-steps-13/artifacts/fd9j0kxz_topuk-sonrasi.webp",
     coverAlt: "Topuk çatlağı bakımı sonrası pürüzsüz topuk",
-    readMinutes: 6,
+    readMinutes: 10,
     metaDescription:
-      "Kadınlarda topuk çatlağı neden oluşur ve nasıl kalıcı çözüme kavuşur? Podosis'ten klinik ve evde uygulanabilir öneriler.",
+      "Kadınlarda topuk çatlağı neden oluşur? Kuru cilt, ayakta kalma ve ayakkabı seçiminin etkileri; evde bakım, üreli krem ve uzman desteği rehberi.",
     content: [
       {
         type: "p",
-        text: "Topuk çatlağı yalnızca estetik bir mesele gibi görünse de çoğu zaman bedenin kendini ifade ediş biçimidir: yeterince nemlenmiyorum, çok ayaktayım, yanlış ayakkabı giyiyorum… Bu yazıda nedenlerini ve kliniğimizde nasıl çözüme kavuşturduğumuzu samimi bir dille anlatmak istiyoruz.",
+        text: "Kadınlarda topuk çatlağı; kuru cilt, günlük basınç, ayakkabı seçimi ve bakım alışkanlıklarının birlikte etkileyebildiği yaygın bir cilt problemidir. Sadece görüntüyle ilgili değildir: çatlak derinleştikçe yürürken hassasiyet, ağrı ve kanama görülebilir. Bu rehberde topuk çatlağının nedenlerini, evde güvenli bakım adımlarını, hangi uygulamalardan kaçınmanız gerektiğini ve ne zaman profesyonel değerlendirme almanız gerektiğini ayrıntılı biçimde ele alıyoruz.",
       },
-      { type: "h2", text: "Neden oluşur?" },
+      { type: "h2", text: "Topuk çatlağı neden oluşur?" },
       {
         type: "p",
-        text: "Topuk bölgesindeki cilt vücudun en kalın ama en çok yük taşıyan bölgelerinden biridir. Nemlenmediğinde esneyemez; esneyemeyen cilt baskı altında kırılır, bu da önce ince çizgiler, sonra derin çatlaklar olarak karşımıza çıkar. Hormonal değişimler, hipotiroidi, demir eksikliği, uzun süre ayakta kalma ve açık arkalı ayakkabılar en sık rastladığımız nedenlerdir.",
+        text: "Topuk derisi vücudun yük taşıyan bölgelerinden biridir. Cilt kuruduğunda ve kalınlaştığında esnekliği azalır; yürürken oluşan basınç, topuk kenarlarında ince çizgilerin ve zamanla fissür adı verilen çatlakların oluşmasına katkıda bulunabilir. Uzun süre ayakta kalmak, açık arkalı terlikler, ayağa uymayan ayakkabılar, soğuk ve kuru hava, sıcak suyla uzun duşlar ve düzenli nemlendirmemek sık karşılaşılan etkenlerdir.",
       },
-      { type: "h2", text: "Hafif ve derin çatlak ayrımı" },
+      { type: "h3", text: "Kadınlarda sık karşılaşılan günlük etkenler" },
+      {
+        type: "ul",
+        items: [
+          "Gün içinde uzun süre ayakta kalmak veya sert zeminde çalışmak",
+          "Topuğu açık terlik ve sandaletleri uzun süre kullanmak",
+          "Kış aylarında düşük nem, kalorifer ve sıcak duşun cildi kurutması",
+          "Pedikür veya törpüleme sırasında cildin gereğinden fazla inceltilmesi",
+          "Topuk bölgesini düzenli nemlendirmeyi yalnızca çatlak belirginleştiğinde hatırlamak",
+        ],
+      },
+      { type: "h2", text: "Çatlak ile kuruluk arasındaki fark nasıl anlaşılır?" },
       {
         type: "p",
-        text: "Yüzeysel çatlaklar genellikle acı vermeyen, hafif kaşıntılı çizgilerdir. Derin çatlaklarda ise yürürken keskin bir ağrı, bazen çorabın kenarına sürtünen bir his olur ve ileri aşamalarda kanama görülebilir. Derin çatlaklar enfeksiyona davet çıkarır; bu nedenle ciddiye alınmalıdır.",
+        text: "Kurulukta cilt genellikle mat, gergin ve pütürlü görünür. Çatlak oluştuğunda ise topuk kenarında çizgi şeklinde yarıklar, dokunmakla hassasiyet veya yürürken batma görülebilir. Kanama, akıntı, belirgin kızarıklık, ısı artışı ya da artan ağrı varsa yalnızca kozmetik bakım olarak değerlendirmeyin; sağlık profesyonelinden görüş alın.",
       },
-      { type: "h2", text: "Kliniğimizde nasıl yaklaşıyoruz?" },
+      {
+        type: "callout",
+        title: "Önemli güvenlik notu",
+        text: "Diyabet, dolaşım problemi, egzama, sedef, uyuşma veya tekrarlayan enfeksiyon öykünüz varsa evde derin törpüleme ve kesme yapmadan önce doktorunuza ya da ilgili sağlık profesyoneline danışın.",
+      },
+      { type: "h2", text: "Evde topuk çatlağı bakımı: güvenli bir rutin" },
       {
         type: "p",
-        text: "Klinik bakımda önce sertleşmiş bölgeyi nazikçe inceltir, ardından ciltte nem bariyerini yeniden kurarız. Bu süreç cildi zedelemeden ve ağrısızdır. Seans sonunda size özel bir ev rutini çıkarıyoruz: hangi kremi, ne zaman, ne kadar.",
+        text: "Topuk bakımı tek seferlik yoğun bir işlemden çok, düzenli ve nazik bir rutindir. Dermatoloji kaynakları; kısa ve ılık duşu, cilt hâlâ hafif nemliyken nemlendirmeyi, uygun içerikli yoğun kremleri ve topuğu koruyan ayakkabıları öne çıkarır. Amaç cildi zorlamak değil, nem bariyerini destekleyerek çatlakların derinleşmesini önlemektir.",
       },
-      { type: "h2", text: "Evde fark yaratan 3 şey" },
+      { type: "h3", text: "1. Ilık suyla kısa temizlik ve nazik kurulama" },
       {
         type: "p",
-        text: "Birincisi günlük ılık duş sonrası üreli krem. İkincisi akşamları pamuklu çorap ile 10 dakikalık örtücü nemlenme. Üçüncüsü sırt yüzeyi desteği olan, topuğu kapalı ev terlikleri. Bu üç değişiklik bile çoğu kişide 3-4 hafta içinde belirgin fark yaratır.",
+        text: "Uzun ve çok sıcak banyolar kuruluğu artırabilir. Ilık suyla kısa bir duşun ardından ayakları havluyla sertçe ovalamak yerine tampon hareketlerle kurulayın. Parmak aralarını kuru bırakın; topuk bölgesini ise nemlendirici uygulamaya hazır olacak kadar hafif nemli bırakabilirsiniz.",
       },
-      { type: "h2", text: "Kışa özel bir not" },
+      { type: "h3", text: "2. Nemlendiriciyi doğru zamanda uygulayın" },
       {
         type: "p",
-        text: "Kalorifer kurutur, soba kurutur, kış ayakkabısının içi de kurutur. Bu yüzden kış aylarında hem duş sonrası hem de gün içinde bir kere daha kremlemeyi rutinin parçası yapmak önemli. Kliniğimizdeki PediZone %15 üreli krem, bu günlük ihtiyaç için hem etkili hem de hızlı emilen bir ürün.",
+        text: "Nemlendiriciyi banyo veya duştan sonraki ilk birkaç dakika içinde uygulamak, ciltteki nemin korunmasına yardımcı olabilir. Dermatoloji kaynaklarında %10–25 aralığında üre içeren ürünler kuru ve sertleşmiş topuk bakımında değerlendirilen seçenekler arasında yer alır. Ürün etiketindeki kullanım talimatlarına uyun; yanma veya tahriş olursa kullanımı durdurup uzman görüşü alın.",
+      },
+      {
+        type: "link",
+        text: "Topuk bakımı için PediZone %15 Üreli Kremi inceleyin",
+        to: "/urunler/pedizone-intense-repair-ureli-krem",
+      },
+      { type: "h3", text: "3. Gece bakımını pamuklu çorapla destekleyin" },
+      {
+        type: "p",
+        text: "Akşam uygulanan yoğun bir nemlendirme sonrasında temiz, pamuklu bir çorap kullanmak ürünün topuk bölgesinde kalmasına yardımcı olabilir. Çorabın çok sıkı olmamasına ve cildin tahriş olmamasına dikkat edin. Parmak aralarında nem birikiyorsa bu bölgelere yoğun krem sürmeyin.",
+      },
+      { type: "h3", text: "4. Ayakkabı seçimini gözden geçirin" },
+      {
+        type: "p",
+        text: "Topuğu açık, ayağa dar gelen veya tabanı aşınmış ayakkabılar topuk çevresindeki basıncı artırabilir. Günlük kullanımda topuğu destekleyen, ayağa uygun ve parmakların rahat hareket edebildiği modelleri tercih edin. Uzun süre ayakta kalıyorsanız gün içinde ayaklarınızı dinlendirecek kısa aralar planlayın.",
+      },
+      { type: "h2", text: "Törpüleme ve kesme konusunda en sık yapılan hatalar" },
+      {
+        type: "p",
+        text: "Topuk çatlağını hızla düzeltmek için jilet, makas, kesici alet veya sert törpü kullanmak kısa vadede pürüzsüz bir görüntü verse de ciltte yeni hasara yol açabilir. Özellikle derin çatlak, kanama, diyabet veya his kaybı varsa evde kesme işlemi yapmayın. Sertleşmiş alanın miktarı ve güvenli bakım yöntemi kişiden kişiye değişir.",
+      },
+      {
+        type: "link",
+        text: "Topuk ve nasır bakımı hizmetimiz hakkında bilgi alın",
+        to: "/hizmetler/topuk-nasir-bakimi",
+      },
+      { type: "h2", text: "Podosis’te topuk çatlağına yaklaşımımız" },
+      {
+        type: "p",
+        text: "Merkezimizde önce çatlağın derinliğini, sertleşmenin dağılımını ve basınç noktalarını değerlendiriyoruz. Gereken durumlarda sertleşmiş bölgeyi steril ekipmanla ölçülü biçimde inceltiyor, ardından yoğun nemlendirme ve evde sürdürülebilecek bir bakım planı oluşturuyoruz. Seans sonrası hedefimiz yalnızca o günkü pürüzsüzlük değil; doğru ayakkabı, düzenli nemlendirme ve takip ile bakımın sürdürülebilir olmasıdır.",
+      },
+      {
+        type: "productCard",
+        productSlug: "pedizone-intense-repair-ureli-krem",
+      },
+      { type: "h2", text: "Ne zaman uzmana başvurmalısınız?" },
+      {
+        type: "p",
+        text: "Düzenli ve nazik ev bakımına rağmen çatlaklar düzelmiyorsa, çatlaklar derinse veya yürümeyi etkileyen ağrı varsa değerlendirme alın. Kanama, akıntı, belirgin kızarıklık, şişlik, ısı artışı ya da kötüleşme görülmesi de beklememeniz gereken işaretlerdir. Diyabet veya dolaşım problemi olan kişilerde küçük ayak sorunları bile daha dikkatli ele alınmalıdır.",
+      },
+      {
+        type: "link",
+        text: "Podosis’te kişiye özel ayak bakımı için iletişime geçin",
+        to: "/iletisim",
+      },
+      { type: "h2", text: "Kısa bakım kontrol listesi" },
+      {
+        type: "ul",
+        items: [
+          "Duşu kısa ve ılık tutun; ayakları sertçe ovalamayın.",
+          "Banyo sonrası topukları gecikmeden nemlendirin.",
+          "Üre içeren ürünleri etiket talimatına göre kullanın.",
+          "Topuğu destekleyen ve ayağa uygun ayakkabılar seçin.",
+          "Derin çatlakları kesmeyin veya agresif biçimde törpülemeyin.",
+          "Düzelmeyen, kanayan veya ağrılı çatlaklarda uzman değerlendirmesi alın.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Bu yazı genel bilgilendirme amaçlıdır; kişisel tanı veya tedavi yerine geçmez. Topuk çatlağınızın nedeni ve uygun bakım planı için muayene gerekebilir.",
+      },
+      { type: "h2", text: "Kaynaklar ve daha fazla okuma" },
+      {
+        type: "p",
+        text: "Bu rehber, klinik bakım deneyimimiz ve günlük ayak bakımında kullanılan genel, temkinli öneriler doğrultusunda hazırlanmıştır. Kişisel durumlarda uzman değerlendirmesi gerekebilir.",
       },
     ],
     faqs: [
       {
-        q: "Topuk çatlağı kendiliğinden geçer mi?",
-        a: "Yüzeysel çizgiler düzenli nemlenmeyle kapanabilir, ancak derin çatlaklar profesyonel bakım gerektirir. Erken dönemde başvurmak her iki yönden de en doğrusu.",
+        q: "Topuk çatlağı neden olur?",
+        a: "Kuruluk, sertleşmiş cilt, uzun süre ayakta kalma, topuğu açık ayakkabılar, ayağa uymayan modeller, sıcak ve uzun duşlar ve yetersiz nemlendirme sık görülen etkenlerdir. Bazı cilt veya sistemik hastalıklar da rol oynayabilir.",
       },
       {
-        q: "Taş törpü ile evde ne kadar inceltebilirim?",
-        a: "Banyo sonrası çok hafif bir törpüleme faydalı olabilir. Ancak sertleşmiş bölgeyi çok derine indirmeye çalışmak cildi yaralar; bu işi kliniğe bırakmak daha sağlıklı.",
+        q: "Topuk çatlağına hangi krem iyi gelir?",
+        a: "Kuru ve sertleşmiş topuklarda üre içeren yoğun nemlendiriciler değerlendirilebilir. Ürünü etiket talimatına göre kullanın; belirgin yanma, tahriş veya açık yara varsa uzman görüşü alın.",
       },
       {
-        q: "Ne kadar sürede sonuç alırım?",
-        a: "İlk seans sonrası aynı akşam rahatlama hissedebilirsiniz. Kalıcı sonuç için 3-4 haftalık bir ev rutini ile birlikte 2-3 seans genellikle yeterli.",
+        q: "Topuk çatlağı için ponza taşı veya törpü kullanılabilir mi?",
+        a: "Yüzeysel sertlikte çok nazik bir uygulama bazı kişilerde yardımcı olabilir; ancak derin çatlaklarda, kanamada, diyabette veya his kaybında evde törpüleme ve kesme yapılmamalıdır.",
+      },
+      {
+        q: "Topuk çatlağı ne kadar sürede düzelir?",
+        a: "Süre çatlağın derinliğine, cildin kuruluk düzeyine ve bakımın düzenine göre değişir. Düzelme olmuyor veya durum kötüleşiyorsa profesyonel değerlendirme alın.",
+      },
+      {
+        q: "Topuk çatlağı ne zaman doktora veya uzmana gösterilmeli?",
+        a: "Derin veya kanayan çatlaklarda, artan ağrı, kızarıklık, şişlik, akıntı ya da ısı artışında ve diyabet veya dolaşım problemi varsa beklemeden sağlık profesyoneline danışılmalıdır.",
       },
     ],
   },
