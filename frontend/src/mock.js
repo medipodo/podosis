@@ -258,7 +258,7 @@ export const products = [
     imageAlt: "PediZone Fresh-Guard Ayak Temizleme Köpüğü 200ml",
   },
   {
-    slug: "uretli-onarici-krem",
+    slug: "pedizone-intense-repair-ureli-krem",
     name: "PediZone %15 Üreli Çatlak Topuk ve Ayak Kremi",
     volume: "150 ml",
     price: 1699,
