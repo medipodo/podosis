@@ -169,6 +169,40 @@ const ProductDetail = () => {
         </section>
       )}
 
+      {/* Product Visual Story — Fresh-Guard only */}
+      {product.slug === "ayak-temizleme-kopugu" && (
+        <section className="py-8 md:py-12" aria-label="Fresh-Guard görselleri">
+          <div className="container-wide grid md:grid-cols-[5fr_7fr] gap-6 md:gap-8 items-stretch">
+            <figure className="rounded-3xl overflow-hidden bg-bone min-h-[420px] md:min-h-[560px]">
+              <img
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663870773359/cxieiwmvjCFDnhRF.webp"
+                alt="PediZone Fresh-Guard Ayak Temizleme Köpüğü ile gülümseyen çocuk"
+                loading="lazy"
+                width="1024"
+                height="1536"
+                className="w-full h-full object-cover object-center"
+              />
+              <figcaption className="sr-only">
+                PediZone Fresh-Guard Ayak Temizleme Köpüğü günlük bakım rutini için
+              </figcaption>
+            </figure>
+            <figure className="rounded-3xl overflow-hidden bg-bone min-h-[420px] md:min-h-[560px]">
+              <img
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663870773359/RmfEuOacbhWexyND.webp"
+                alt="Podoloji kliniğinde PediZone Fresh-Guard Ayak Temizleme Köpüğü ile ayak temizliği"
+                loading="lazy"
+                width="1649"
+                height="2048"
+                className="w-full h-full object-cover object-center"
+              />
+              <figcaption className="sr-only">
+                Fresh-Guard köpüğünün klinik ayak bakımındaki kullanımı
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+      )}
+
       {/* Ingredients */}
       {product.ingredients?.length > 0 && (
         <section className="py-16 md:py-20 bg-bone/50">
