@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+  <channel>
+    <title>Podosis PediZone Ürünleri</title>
+    <link>https://podosis.com/urunler</link>
+    <description>Podosis PediZone ürünleri</description>
+
+    <item>
+      <g:id>pedizone-ayak-temizleme-kopugu-200ml</g:id>
+      <g:title>PediZone Fresh-Guard Ayak Temizleme Köpüğü 200 ml</g:title>
+      <g:description>Her seans öncesi kliniğimizde de tercih edilen, cildi yormadan temizleyen yumuşak köpük. Günlük ayak temizliği ve bakım rutini için geliştirilmiştir.</g:description>
+      <g:link>https://podosis.com/urunler/ayak-temizleme-kopugu</g:link>
+      <g:image_link>https://customer-assets.emergentagent.com/job_healthy-steps-13/artifacts/8nwi30nv_pedizone-mantar-kopugu.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:price>1799.00 TRY</g:price>
+      <g:brand>PediZone</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Sağlık ve kişisel bakım &gt; Ayak bakım ürünleri &gt; Ayak temizleme ürünleri</g:product_type>
+      <g:custom_label_0>Pazaryeri referans fiyatı</g:custom_label_0>
+    </item>
+
+    <item>
+      <g:id>pedizone-ureli-ayak-kremi-150ml</g:id>
+      <g:title>PediZone %15 Üreli Çatlak Topuk ve Ayak Kremi 150 ml</g:title>
+      <g:description>Topuk çatlakları ve sertleşmiş cilt için %15 üre, shea yağı, avokado yağı ve gliserin içeren yoğun bakım kremi.</g:description>
+      <g:link>https://podosis.com/urunler/pedizone-intense-repair-ureli-krem</g:link>
+      <g:image_link>https://customer-assets.emergentagent.com/job_healthy-steps-13/artifacts/yzlfdvju_pedizone-mantar-kremi.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:price>1699.00 TRY</g:price>
+      <g:brand>PediZone</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Sağlık ve kişisel bakım &gt; Ayak bakım ürünleri &gt; Ayak kremleri</g:product_type>
+      <g:custom_label_0>Pazaryeri referans fiyatı</g:custom_label_0>
+    </item>
+
+    <item>
+      <g:id>pedizone-foot-nail-care-serum-50ml</g:id>
+      <g:title>PediZone Foot and Nail Care Serum 50 ml</g:title>
+      <g:description>Tırnak ve ayak bakımı için çay ağacı yağı, salisilik asit, üre ve E vitamini içeren ince yapılı günlük bakım serumu.</g:description>
+      <g:link>https://podosis.com/urunler/tirnak-ayak-serumu</g:link>
+      <g:image_link>https://customer-assets.emergentagent.com/job_healthy-steps-13/artifacts/d4catras_mantar-serumu-pedizone.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:price>1449.00 TRY</g:price>
+      <g:brand>PediZone</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Sağlık ve kişisel bakım &gt; Ayak bakım ürünleri &gt; Tırnak bakım ürünleri</g:product_type>
+      <g:custom_label_0>Pazaryeri referans fiyatı</g:custom_label_0>
+    </item>
+  </channel>
+</rss>
