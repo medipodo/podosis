@@ -1,6 +1,14 @@
 import React from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
-import { Calendar, User, ArrowRight, ChevronRight } from "lucide-react";
+import {
+  Calendar,
+  User,
+  ArrowRight,
+  ChevronRight,
+  Check,
+  ShieldAlert,
+  Sparkles,
+} from "lucide-react";
 import SEO from "../components/SEO";
 import FaqBlock from "../components/FaqBlock";
 import { getBlogPost, getProduct, blogPosts, clinic } from "../mock";
@@ -128,6 +136,98 @@ const BlogDetail = () => {
                     <li key={j}>{li}</li>
                   ))}
                 </ul>
+              );
+            if (block.type === "image")
+              return (
+                <figure key={i} className="my-10 rounded-3xl overflow-hidden border border-line bg-bone shadow-sm">
+                  <img
+                    src={block.src}
+                    alt={block.alt}
+                    loading="lazy"
+                    width="1200"
+                    height="900"
+                    className="w-full h-auto"
+                  />
+                  {block.caption && (
+                    <figcaption className="px-5 py-4 text-sm text-ink-muted leading-relaxed">
+                      {block.caption}
+                    </figcaption>
+                  )}
+                </figure>
+              );
+            if (block.type === "steps")
+              return (
+                <section key={i} className="my-10 rounded-3xl bg-bone/70 border border-line p-6 md:p-8 not-prose">
+                  <div className="flex items-start gap-3 mb-6">
+                    <div className="w-10 h-10 rounded-2xl bg-brand-light text-brand flex items-center justify-center shrink-0">
+                      <Sparkles className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <h3 className="font-heading text-2xl text-ink leading-tight">{block.title}</h3>
+                      {block.intro && <p className="mt-2 text-sm text-ink-muted leading-relaxed">{block.intro}</p>}
+                    </div>
+                  </div>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    {block.items.map((item, j) => (
+                      <div key={j} className="rounded-2xl bg-white border border-line p-5">
+                        <div className="flex items-center gap-3 mb-3">
+                          <span className="w-8 h-8 rounded-full bg-brand text-white flex items-center justify-center text-sm font-semibold">{j + 1}</span>
+                          <h4 className="font-heading text-lg text-ink">{item.title}</h4>
+                        </div>
+                        <p className="text-sm text-ink-muted leading-relaxed">{item.text}</p>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              );
+            if (block.type === "tipGrid")
+              return (
+                <section key={i} className="my-10 grid md:grid-cols-3 gap-4 not-prose">
+                  {block.items.map((item, j) => (
+                    <div key={j} className="rounded-2xl border border-line bg-white p-5 shadow-sm">
+                      <div className="w-9 h-9 rounded-xl bg-brand-light text-brand flex items-center justify-center mb-4">
+                        <Check className="w-4 h-4" />
+                      </div>
+                      <h3 className="font-heading text-xl text-ink mb-2">{item.title}</h3>
+                      <p className="text-sm text-ink-muted leading-relaxed">{item.text}</p>
+                    </div>
+                  ))}
+                </section>
+              );
+            if (block.type === "serviceCard") {
+              const service = getService(block.serviceSlug);
+              if (!service) return null;
+              return (
+                <div key={i} className="my-10 rounded-3xl overflow-hidden border border-brand-light bg-brand-light/35 not-prose">
+                  <div className="grid md:grid-cols-[220px_1fr] gap-6 p-5 md:p-7 items-center">
+                    <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-bone">
+                      <img src={service.image} alt={service.imageAlt} loading="lazy" width="800" height="600" className="w-full h-full object-cover" />
+                    </div>
+                    <div>
+                      <p className="overline mb-2">Podosis’te uzman desteği</p>
+                      <h3 className="font-heading text-2xl text-ink mb-2">{service.title}</h3>
+                      <p className="text-sm text-ink-muted leading-relaxed mb-4">{service.intro}</p>
+                      <Link to={`/hizmetler/${service.slug}`} className="inline-flex items-center gap-2 bg-brand text-white px-5 py-3 rounded-full font-medium hover:bg-brand-hover transition-colors">
+                        Hizmeti incele <ArrowRight className="w-4 h-4" />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              );
+            }
+            if (block.type === "warningCard")
+              return (
+                <aside key={i} className="my-10 rounded-3xl border border-amber-200 bg-amber-50 p-6 md:p-7 not-prose">
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center shrink-0">
+                      <ShieldAlert className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <h3 className="font-heading text-xl text-ink mb-2">{block.title}</h3>
+                      <p className="text-sm text-ink-muted leading-relaxed">{block.text}</p>
+                    </div>
+                  </div>
+                </aside>
               );
             if (block.type === "link") {
               const linkClass = "inline-flex items-center gap-2 mt-2 text-brand font-medium underline underline-offset-4 hover:text-brand-hover";

@@ -778,6 +778,17 @@ export const blogPosts = [
         type: "p",
         text: "Kadınlarda topuk çatlağı; kuru cilt, günlük basınç, ayakkabı seçimi ve bakım alışkanlıklarının birlikte etkileyebildiği yaygın bir cilt problemidir. Sadece görüntüyle ilgili değildir: çatlak derinleştikçe yürürken hassasiyet, ağrı ve kanama görülebilir. Bu rehberde topuk çatlağının nedenlerini, evde güvenli bakım adımlarını, hangi uygulamalardan kaçınmanız gerektiğini ve ne zaman profesyonel değerlendirme almanız gerektiğini ayrıntılı biçimde ele alıyoruz.",
       },
+      {
+        type: "steps",
+        title: "Topuk bakımını dört adımda düzenleyin",
+        intro: "Küçük ama sürdürülebilir adımlar, tek seferlik sert uygulamalardan daha güvenli bir bakım rutini oluşturur.",
+        items: [
+          { title: "Ilık ve kısa duş", text: "Cildi uzun süre sıcak suda bekletmek yerine kısa, ılık bir duş tercih edin." },
+          { title: "Nazik kurulama", text: "Havluyla sertçe ovalamayın; özellikle parmak aralarını kuru bırakırken topuğu tahriş etmeden kurulayın." },
+          { title: "Duş sonrası nem", text: "Üre içeren yoğun nemlendiriciyi, cilt hafif nemliyken ürün etiketindeki talimata göre uygulayın." },
+          { title: "Basıncı azaltın", text: "Topuğu destekleyen, ayağa tam oturan ve günlük kullanımda rahat ayakkabılar seçin." },
+        ],
+      },
       { type: "h2", text: "Topuk çatlağı neden oluşur?" },
       {
         type: "p",
@@ -853,6 +864,10 @@ export const blogPosts = [
         type: "productCard",
         productSlug: "pedizone-intense-repair-ureli-krem",
       },
+      {
+        type: "serviceCard",
+        serviceSlug: "topuk-nasir-bakimi",
+      },
       { type: "h2", text: "Ne zaman uzmana başvurmalısınız?" },
       {
         type: "p",
@@ -863,7 +878,20 @@ export const blogPosts = [
         text: "Podosis’te kişiye özel ayak bakımı için iletişime geçin",
         to: "/iletisim",
       },
+      {
+        type: "warningCard",
+        title: "Evde bakım her durumda yeterli olmayabilir",
+        text: "Çatlaklar derinse, kanıyorsa veya belirgin ağrı, kızarıklık, şişlik, akıntı ve ısı artışı varsa evde kesme ya da agresif törpüleme yapmayın. Diyabet, dolaşım problemi veya his kaybı olan kişilerde uzman değerlendirmesi özellikle önemlidir.",
+      },
       { type: "h2", text: "Kısa bakım kontrol listesi" },
+      {
+        type: "tipGrid",
+        items: [
+          { title: "Duş sonrası", text: "Topukları gecikmeden nemlendirin; cildi sertçe ovalamayın." },
+          { title: "Günlük ayakkabı", text: "Topuğu destekleyen, ayağa tam oturan ve basıncı azaltan modelleri seçin." },
+          { title: "Güvenli sınır", text: "Derin çatlakları kesmeyin; düzelmeyen veya ağrılı durumlarda değerlendirme alın." },
+        ],
+      },
       {
         type: "ul",
         items: [
