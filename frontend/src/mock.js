@@ -562,6 +562,28 @@ export const blogPosts = [
         type: "p",
         text: "Doğru merkez, yıllardır süregelen küçük bir rahatsızlığı hafta hafta değiştirir. Seçerken acele etmeyin; kliniği görmek, bir-iki soru sormak ve içgüdünüze güvenmek çoğu zaman yeterlidir. Siz de Elvankent ve çevresinde bir başlangıç noktası arıyorsanız, Podosis olarak kapımız her zaman açık.",
       },
+      {
+        type: "steps",
+        title: "İyi bir ayak bakım merkezini 4 adımda değerlendirin",
+        intro: "Bir merkezi yalnızca fiyatına göre değil; hijyen, değerlendirme, planlama ve iletişim kalitesine göre inceleyin.",
+        items: [
+          { title: "Hijyen protokolünü sorun", text: "Aletlerin nasıl steril edildiğini, tek kullanımlık parçaların nasıl yönetildiğini ve çalışma alanının bakımını açıkça sorabilmelisiniz." },
+          { title: "İlk değerlendirmeyi önemseyin", text: "İyi bir merkez, işlemden önce ayağın ve tırnağın durumunu değerlendirir; herkese aynı uygulamayı sunmak yerine kişiye göre plan kurar." },
+          { title: "Ev planını netleştirin", text: "Seans sonrasında ne yapacağınız, ne zaman kontrol gerektiği ve hangi alışkanlıkların değişeceği açıkça anlatılmalıdır." },
+          { title: "Ulaşılabilir iletişim arayın", text: "Sorularınıza yanıt veren, gerektiğinde fotoğrafla ön bilgi alan ve takip sürecini önemseyen bir merkez daha sürdürülebilir bir bakım deneyimi sunar." }
+        ]
+      },
+      {
+        type: "tipGrid",
+        items: [
+          { title: "Steril çalışma", text: "Paketli alet ve görünür hijyen uygulaması güven duygusunu destekler." },
+          { title: "Kişisel plan", text: "Nasır, çatlak, batık ve mantar aynı bakım protokolüyle ele alınmaz." },
+          { title: "Takip sistemi", text: "Düzenli kontrol ve ev önerisi, tek seanslık rahatlamadan daha değerlidir." }
+        ]
+      },
+      { type: "serviceCard", serviceSlug: "ayak-bakimi" },
+      { type: "link", to: "/hizmetler/topuk-nasir-bakimi", text: "Topuk ve nasır bakımı hizmetini inceleyin" },
+      { type: "callout", title: "Merkezi görmeden karar vermek zorunda değilsiniz", text: "Elvankent'teki Podosis merkezini, uygulama yaklaşımını ve size uygun bakım planını WhatsApp üzerinden sorabilirsiniz." }
     ],
     faqs: [
       {
@@ -626,6 +648,25 @@ export const blogPosts = [
         type: "p",
         text: "Batık tırnakta asıl hedef, tırnağı cerrahi olarak çekmek değil; onu doğru açıyla yönlendirmek. Ortonyxia tel veya plastik brace uygulamaları, birkaç haftalık bir süreç içinde tırnağı düzgün hatta büyümeye alıştırır. Bu, uzun vadede kalıcı sonuç verir. Batık tırnak hakkında detaylı sayfamıza göz atabilir ya da WhatsApp üzerinden fotoğrafınızla ön değerlendirme isteyebilirsiniz.",
       },
+      {
+        type: "steps",
+        title: "Batık tırnakta güvenli yaklaşım nasıl olmalı?",
+        intro: "Amaç batan kenarı evde kesmek değil; ağrıyı artırmadan bölgeyi korumak ve gerektiğinde profesyonel değerlendirme almaktır.",
+        items: [
+          { title: "Bölgeyi temiz ve kuru tutun", text: "Ayağı nazikçe temizleyin, parmak çevresini tampon hareketlerle kurulayın ve nemli çorapla uzun süre kalmayın." },
+          { title: "Tırnağı zorlamayın", text: "Makas, jilet, iğne veya derin kesimle batan kenarı çıkarmaya çalışmak cildi daha fazla tahriş edebilir." },
+          { title: "Ayakkabıyı rahatlatın", text: "Parmakları sıkıştırmayan, geniş burunlu ve ayağa uygun ayakkabılar tercih edin." },
+          { title: "Belirti artarsa beklemeyin", text: "İrin, belirgin şişlik, artan ağrı, ateş veya diyabet gibi ek riskler varsa sağlık profesyoneline başvurun." }
+        ]
+      },
+      {
+        type: "warningCard",
+        title: "Evde kesme işlemi güvenli bir çözüm değildir",
+        text: "Özellikle kızarıklık, akıntı, kanama veya şiddetli ağrı varsa tırnak kenarını kesmeyin ve bölgeyi kurcalamayın. Uygun yaklaşım, batığın derecesinin değerlendirilmesiyle belirlenir."
+      },
+      { type: "serviceCard", serviceSlug: "batik-tirnak" },
+      { type: "link", to: "/blog/tirnak-mantari-belirtileri-erken-teshis", text: "Tırnak görünümündeki değişiklikleri mantardan ayırt etmeyi okuyun" },
+      { type: "callout", title: "Fotoğrafla ön değerlendirme", text: "Batık tırnağın ne kadar ilerlediğinden emin değilseniz Podosis'e WhatsApp üzerinden fotoğraf göndererek hangi adımın uygun olabileceğini sorabilirsiniz." }
     ],
     faqs: [
       {
@@ -685,6 +726,28 @@ export const blogPosts = [
         type: "p",
         text: "Tırnak mantarı utanılacak bir durum değil; ortak banyolar, spor salonları ve hatta aile içi ortak kullanılan havlular gibi çok sıradan kaynakları vardır. Erken fark etmek, doğru tedavi yolunu açar. Emin değilseniz WhatsApp'tan bir fotoğraf göndermeniz bile çoğu zaman ön yönlendirme için yeterlidir.",
       },
+      {
+        type: "steps",
+        title: "Tırnak mantarı şüphesinde izlenecek 4 adım",
+        intro: "Tırnaktaki her renk değişikliği mantar değildir. Düzenli gözlem ve doğru değerlendirme, gereksiz uygulamalardan kaçınmaya yardımcı olur.",
+        items: [
+          { title: "Değişikliği kaydedin", text: "Renk, kalınlık, kırılganlık ve tırnak altındaki birikimi aynı ışıkta fotoğraflayarak takip edin." },
+          { title: "Tırnağı kazımayın", text: "Törpülemek veya yüzeydeki birikimi kazımak enfeksiyonu tek başına ortadan kaldırmaz; çevre dokuya zarar verebilir." },
+          { title: "Nem ve ortak eşyaları yönetin", text: "Ayakları kuru tutun, temiz çorap kullanın ve havlu, terlik, tırnak makası gibi kişisel eşyaları paylaşmayın." },
+          { title: "Sürekliliği planlayın", text: "Tırnak yavaş uzadığı için görünür düzelme zaman alabilir. Tedavi veya bakım planı uzman değerlendirmesine göre sürdürülmelidir." }
+        ]
+      },
+      {
+        type: "tipGrid",
+        items: [
+          { title: "Renk değişikliği", text: "Sararma veya beyazlama tek başına kesin tanı anlamına gelmez; travma ve başka tırnak sorunları da benzer görünebilir." },
+          { title: "Kalınlaşma", text: "Tırnağın kalınlaşması ve kırılganlaşması değerlendirme gerektiren işaretler arasında olabilir." },
+          { title: "Yavaş iyileşme", text: "Sağlıklı tırnağın görünür hale gelmesi, tırnağın uzama hızına bağlı olarak aylar sürebilir." }
+        ]
+      },
+      { type: "serviceCard", serviceSlug: "tirnak-mantari" },
+      { type: "link", to: "/urunler/tirnak-ayak-serumu", text: "Foot and Nail Care Serum sayfasını inceleyin" },
+      { type: "warningCard", title: "Tanıyı yalnızca görüntüye göre koymayın", text: "Yayılma, ağrı, akıntı, diyabet, bağışıklık baskılanması veya uzun süren değişikliklerde sağlık profesyoneli değerlendirmesi gerekir. Ürün kullanımı uzman önerisinin yerine geçmez." }
     ],
     faqs: [
       {
@@ -744,6 +807,29 @@ export const blogPosts = [
         type: "p",
         text: "Düzenli bakımda 4-8 haftalık aralıklar çoğu kişi için uygundur. Diyabet, yoğun spor ya da tekrarlayan nasır gibi özel durumlarda bu aralık kısalabilir. Kliniğe ne zaman geleceğinizi seans çıkışında birlikte planlıyoruz.",
       },
+      {
+        type: "steps",
+        title: "Bakım sonrası ilk 48 saat için pratik plan",
+        intro: "Seansın etkisini desteklemek için cildi zorlamadan, temiz ve düzenli bir bakım rutini oluşturun.",
+        items: [
+          { title: "İlk gün nazik davranın", text: "Çok sıcak sudan, sert ovalamadan ve cildi gereksiz yere sürtünmeye maruz bırakmaktan kaçının." },
+          { title: "Nemlendirmeyi sürdürün", text: "Uzmanınızın önerdiği ürünü ürün etiketindeki talimata göre uygulayın; parmak aralarını kuru tutun." },
+          { title: "Rahat ayakkabı seçin", text: "Bakım sonrası ayağı sıkıştırmayan, temiz ve nefes alan çoraplarla kullanılan ayakkabıları tercih edin." },
+          { title: "Değişikliği izleyin", text: "Artan kızarıklık, şişlik, ağrı veya akıntı fark ederseniz kliniğinizle iletişime geçin." }
+        ]
+      },
+      {
+        type: "tipGrid",
+        items: [
+          { title: "Temizlik", text: "Ayakları temiz ve kuru tutun; özellikle parmak aralarında nem birikmesini önleyin." },
+          { title: "Nem dengesi", text: "Topuk ve sertleşmiş bölgeyi düzenli nemlendirin, ürünü açık yaraya veya tahrişli alana gelişigüzel uygulamayın." },
+          { title: "Takip", text: "Ev rutini, uygun ayakkabı ve planlı kontroller bakımın kalıcılığını destekler." }
+        ]
+      },
+      { type: "productCard", productSlug: "ayak-temizleme-kopugu" },
+      { type: "link", to: "/urunler/pedizone-intense-repair-ureli-krem", text: "Topuk kuruluğu için PediZone %15 Üreli Kremi inceleyin" },
+      { type: "serviceCard", serviceSlug: "topuk-nasir-bakimi" },
+      { type: "callout", title: "Bakım kişiye göre planlanır", text: "Seans sonrası öneriler cildin, tırnağın ve günlük alışkanlıkların durumuna göre değişebilir. Emin olmadığınız bir ürünü veya uygulamayı kendi başınıza başlatmadan önce uzmanınıza danışın." }
     ],
     faqs: [
       {
